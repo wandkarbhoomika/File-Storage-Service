@@ -158,18 +158,16 @@ postman request DELETE 'http://localhost:8000/files/delete/6' \
 ---
 
 ## DB Schema
-+--------------------+
-|  file_metadata     |
-+--------------------+
-| id (PK)            |
-| filename           |
-| filepath           |
-| size               |
-| content_type       |
-| owner              |
-| created_at         |
-+--------------------+
 
+| Column Name   | Description        |
+|---------------|------------------|
+| id (PK)       | Primary Key       |
+| filename      | Name of the file  |
+| filepath      | Path to file      |
+| size          | File size         |
+| content_type  | MIME type         |
+| owner         | Owner of the file |
+| created_at    | Creation timestamp|
 
 
 
