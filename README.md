@@ -34,13 +34,14 @@ Used when submitting files from Postman or a form)
 
 ---
 
-API Endpoints (+ cURL commands)
+### API Endpoints & CURL commands
+
 ### 1️ Upload File
 
 POST /files/upload
-Postman (form-data)
-Key: file → Select File
-Key: owner → enter owner name
+- Postman (form-data)
+- Key: file → Select File
+- Key: owner → enter owner name
 
 CURL
 curl --location --request POST 'http://localhost:8000/files/upload' \
