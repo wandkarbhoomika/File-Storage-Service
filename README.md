@@ -39,7 +39,7 @@ Used when submitting files from Postman or a form)
   
 ---
 
-##📦 Setup Instructions
+## 📦 Setup Instructions
 
 - Clone the project
   git clone https://github.com/wandkarbhoomika/File-Storage-Service.git
@@ -117,8 +117,8 @@ Response
 GET /files/download/{id}
 
 This returns:
-File name
-Dynamic download URL
+- File name
+- Dynamic download URL
 
 CURL 
 postman request 'http://localhost:8000/files/download/9' \
