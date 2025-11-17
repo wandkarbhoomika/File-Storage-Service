@@ -127,6 +127,22 @@ postman request DELETE 'http://localhost:8000/files/delete/6' \
   <img src="Response_SS/DeleteFile_SS.png" width="500"/>
 </p>
 
+---
+
+### DB Schema
++--------------------+
+|  file_metadata     |
++--------------------+
+| id (PK)            |
+| filename           |
+| filepath           |
+| size               |
+| content_type       |
+| owner              |
+| created_at         |
++--------------------+
+
+
 
 
 
