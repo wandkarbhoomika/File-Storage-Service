@@ -30,8 +30,8 @@ It provides REST endpoints to upload, download, list, and delete files.
 - Spring Boot  
 - MySQL (metadata storage)  
 - Local filesystem (file storage)  
-- JPA / Hibernate  
-- Lombok (optional)  
+- JPA / Hibernate 
+- Lombok
 - Postman (API testing)  
 
 ---
