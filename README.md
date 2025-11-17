@@ -1,14 +1,11 @@
 # File-Storage-Service
 
 A lightweight file storage and retrieval system built using **Spring Boot**.  
-It allows users to upload files, stores them safely in a local folder, and saves metadata  
-(file name, path, size, type, owner) in **MySQL**.
-
-Supports secure file download, automatic download link generation,  
-and clean delete operations with disk + DB validation.
+It allows users to upload files, stores them safely in a local folder and saves metadata(file name, path, size, type, owner) in **MySQL**.
+Supports secure file download, automatic download link generation and clean delete operations with disk + DB validation.
 
 This project is a mini **AWS S3–style file storage backend** built using Spring Boot, MySQL, and local filesystem.  
-It provides REST endpoints to upload, download, list, and delete files.
+It provides REST endpoints to upload, download, list and delete files.
 
 ---
 
