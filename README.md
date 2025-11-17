@@ -41,15 +41,17 @@ Used when submitting files from Postman or a form)
 
 ## 📦 Setup Instructions
 
-- Clone the project
-  git clone https://github.com/wandkarbhoomika/File-Storage-Service.git
+### 1️ Clone the project
+```bash
+git clone https://github.com/wandkarbhoomika/File-Storage-Service.git
 
-- Create database in MySQL
+2️ Create database in MySQL
 CREATE DATABASE filedb;
 
-- Configure application.properties
+3 Configure application.properties
+  Add DB username, password, and file storage path.
 
-- Run the project
+4 Run the project
   From Eclipse → Run as → Spring Boot App
 
 ## API Endpoints & CURL commands
