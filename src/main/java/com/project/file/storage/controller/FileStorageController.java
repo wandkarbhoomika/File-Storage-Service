@@ -36,7 +36,6 @@ public class FileStorageController {
     public Map<String, String> getDownloadUrl(@PathVariable Long id) {
         FileMetadata meta = service.getMetadata(id);
 
-        // Build URL pointing to actual file download endpoint
         String downloadUrl = ServletUriComponentsBuilder.fromCurrentContextPath()
                 .path("/files/download-file/")
                 .path(String.valueOf(meta.getId()))
@@ -82,3 +81,4 @@ public class FileStorageController {
     }
 
 }
+
