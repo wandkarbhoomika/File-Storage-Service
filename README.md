@@ -32,11 +32,34 @@ Used when submitting files from Postman or a form)
 - Lombok
 - Postman (API testing)  
 
+##🧰 Development Tools
+- Eclipse IDE 
+- Postman
+- MySQL Workbench
+  
 ---
 
-### API Endpoints & CURL commands
+📦 Setup Instructions
+1️ Clone the project
+git clone https://github.com/wandkarbhoomika/File-Storage-Service.git
 
-### 1️ Upload File
+2️ Create database in MySQL
+CREATE DATABASE filedb;
+
+3️ Configure application.properties
+spring.datasource.url=jdbc:mysql://localhost:3306/filedb
+spring.datasource.username=root
+spring.datasource.password=YOUR_PASSWORD
+file.upload-dir=D:/PROJECT/eclipse-workspace_P2/file_to_upload
+spring.jpa.hibernate.ddl-auto=update
+
+4️ Run the project
+
+From Eclipse → Run as → Spring Boot App
+
+## API Endpoints & CURL commands
+
+## 1️ Upload File
 
 POST /files/upload
 - Postman (form-data)
@@ -62,7 +85,7 @@ Response
   <img src="Response_SS/UploadFile_SS.png" width="500"/>
 </p>
 
-### 2 List File
+## 2 List File
 
 GET /files/list
 CURL
@@ -94,7 +117,7 @@ Response
   <img src="Response_SS/ListFile_SS.png" width="500"/>
 </p>
 
-### 3 Download File
+## 3 Download File
 
 GET /files/download/{id}
 
@@ -116,7 +139,7 @@ Reponse
 </p>
 
 
-### 4 Delete File
+## 4 Delete File
 
 Delete /files/delete/{id}
 
@@ -129,7 +152,7 @@ postman request DELETE 'http://localhost:8000/files/delete/6' \
 
 ---
 
-### DB Schema
+## DB Schema
 +--------------------+
 |  file_metadata     |
 +--------------------+
