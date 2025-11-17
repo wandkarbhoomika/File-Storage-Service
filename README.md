@@ -17,7 +17,7 @@ It provides REST endpoints to upload, download, list, and delete files.
 - File Upload API using `MultipartFile`
 - Saves files to a secure local directory
 - Stores metadata (filename, path, size, type, timestamp, owner) in MySQL
-- Download API returns file bytes and forces browser download
+- Download API returns file bytes 
 - Generates dynamic download URL for easy file access
 - Delete API checks both disk + DB before removing data
 - Clean exception handling and clear JSON responses
