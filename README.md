@@ -58,7 +58,7 @@ Response
     "owner": "bhoomi",
     "createdAt": "2025-11-17T22:17:36.2262321"
 }
-<img width="1367" height="398" alt="image" src="https://github.com/user-attachments/assets/100e98fc-e66d-42ff-b830-a9e7b5738960" />
+![Upload Demo](Response_SS/UploadFile_SS.png)
 
 
 
