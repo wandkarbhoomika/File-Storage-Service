@@ -50,7 +50,7 @@ public class FileStorageService {
 		return repository.findById(id).orElseThrow(() -> new RuntimeException("File not found"));
 	}
 
-	// Read file bytes from folder
+	// Read file from folder
 	public byte[] downloadFile(Long id) throws IOException {
 		FileMetadata meta = getMetadata(id);
 		return Files.readAllBytes(Path.of(meta.getFilepath()));
@@ -63,7 +63,7 @@ public class FileStorageService {
 
 	    Path path = Path.of(meta.getFilepath());
 
-	    //deleting from disk
+	    //deleting from disk / folder
 	    if (Files.exists(path)) {
 	        try {
 	            Files.delete(path);
@@ -85,3 +85,4 @@ public class FileStorageService {
 
 
 }
+
