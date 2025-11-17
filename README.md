@@ -55,7 +55,7 @@ Used when submitting files from Postman or a form)
 
 ## API Endpoints & CURL commands
 
-## 1️ Upload File
+### 1️ Upload File
 
 POST /files/upload
 - Postman (form-data)
@@ -68,20 +68,22 @@ curl --location --request POST 'http://localhost:8000/files/upload' \
 --form 'owner=bhoomi'
 
 Response 
+```json
 {
-    "id": 14,
-    "filename": "12",
-    "filepath": "D:/PROJECT/eclipse-workspace_P2/file_to_upload/12",
-    "size": 323909,
-    "contentType": "application/octet-stream",
-    "owner": "bhoomi",
-    "createdAt": "2025-11-17T22:17:36.2262321"
+  "id": 14,
+  "filename": "12",
+  "filepath": "D:/PROJECT/eclipse-workspace_P2/file_to_upload/12",
+  "size": 323909,
+  "contentType": "application/octet-stream",
+  "owner": "bhoomi",
+  "createdAt": "2025-11-17T22:17:36.2262321"
 }
+```
 <p align="left">
   <img src="Response_SS/UploadFile_SS.png" width="500"/>
 </p>
 
-## 2 List File
+### 2 List File
 
 GET /files/list
 CURL
@@ -89,31 +91,33 @@ postman request 'http://localhost:8000/files/list' \
   --body ''
 
 Response 
+```json
 [
-    {
-        "id": 6,
-        "filename": "b_w_ey.pdf.pdf.pdf",
-        "filepath": "D:/PROJECT/eclipse-workspace_P2/file_to_upload/b_w_ey.pdf.pdf.pdf",
-        "size": 96165,
-        "contentType": "application/pdf",
-        "owner": "bhuvan",
-        "createdAt": "2025-11-17T12:40:03"
-    },
-    {
-        "id": 9,
-        "filename": "deloitte.pdf.pdf.pdf",
-        "filepath": "D:/PROJECT/eclipse-workspace_P2/file_to_upload/deloitte.pdf.pdf.pdf",
-        "size": 90001,
-        "contentType": "application/pdf",
-        "owner": "bhuvan",
-        "createdAt": "2025-11-17T15:44:34"
-    }
+  {
+    "id": 6,
+    "filename": "b_w_ey.pdf.pdf.pdf",
+    "filepath": "D:/PROJECT/eclipse-workspace_P2/file_to_upload/b_w_ey.pdf.pdf.pdf",
+    "size": 96165,
+    "contentType": "application/pdf",
+    "owner": "bhuvan",
+    "createdAt": "2025-11-17T12:40:03"
+  },
+  {
+    "id": 9,
+    "filename": "deloitte.pdf.pdf.pdf",
+    "filepath": "D:/PROJECT/eclipse-workspace_P2/file_to_upload/deloitte.pdf.pdf.pdf",
+    "size": 90001,
+    "contentType": "application/pdf",
+    "owner": "bhuvan",
+    "createdAt": "2025-11-17T15:44:34"
+  }
 ]
+```
 <p align="left">
   <img src="Response_SS/ListFile_SS.png" width="500"/>
 </p>
 
-## 3 Download File
+### 3 Download File
 
 GET /files/download/{id}
 
@@ -126,16 +130,21 @@ postman request 'http://localhost:8000/files/download/9' \
   --body ''
 
 Reponse 
+
+When you click the downloadUrl, Postman opens a new tab. After clicking Send, Postman will display or preview the actual file in the response.  OR
+Copy and paste the downloadUrl in any browser and press Enter , it automatically downloads the file
+```json
 {
-    "fileName": "deloitte.pdf.pdf.pdf",
-    "downloadUrl": "http://localhost:8000/files/download-file/9" #Clicking on this link leads another tab in the postman , after clicking on send , in postman response file will be previewd or showed
+  "fileName": "deloitte.pdf.pdf.pdf",
+  "downloadUrl": "http://localhost:8000/files/download-file/9"
 }
+```
 <p align="left">
   <img src="Response_SS/DownloadFile_SS.png" width="500"/>
 </p>
 
 
-## 4 Delete File
+### 4 Delete File
 
 Delete /files/delete/{id}
 
