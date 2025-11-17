@@ -41,12 +41,11 @@ Used when submitting files from Postman or a form)
 
 ## 📦 Setup Instructions
 
-### 1️ Clone the project
-```bash
-git clone https://github.com/wandkarbhoomika/File-Storage-Service.git
+ 1️ Clone the project
+   git clone https://github.com/wandkarbhoomika/File-Storage-Service.git
 
 2️ Create database in MySQL
-CREATE DATABASE filedb;
+  CREATE DATABASE filedb;
 
 3 Configure application.properties
   Add DB username, password, and file storage path.
