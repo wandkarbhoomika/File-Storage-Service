@@ -14,7 +14,8 @@ It provides REST endpoints to upload, download, list, and delete files.
 
 ## 🚀 Key Features
 
-- File Upload API using `MultipartFile`
+- File Upload API using `MultipartFile` (MultipartFile is a Spring Boot interface that represents an uploaded file in a HTTP request.
+Used when submitting files from Postman or a form)
 - Saves files to a secure local directory
 - Stores metadata (filename, path, size, type, timestamp, owner) in MySQL
 - Download API returns file bytes 
