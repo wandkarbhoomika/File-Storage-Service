@@ -157,11 +157,11 @@ postman request DELETE 'http://localhost:8000/files/delete/6' \
 
 ---
 
-## DB Schema
+## 🗄 DB Schema
 
 | Column Name   | Description        |
 |---------------|------------------|
-| id (PK)       | Primary Key       |
+| id            | Primary Key       |
 | filename      | Name of the file  |
 | filepath      | Path to file      |
 | size          | File size         |
