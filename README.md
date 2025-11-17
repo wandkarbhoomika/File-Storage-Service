@@ -41,22 +41,16 @@ Used when submitting files from Postman or a form)
 
 ##📦 Setup Instructions
 
-1️ Clone the project
-git clone https://github.com/wandkarbhoomika/File-Storage-Service.git
+- Clone the project
+  git clone https://github.com/wandkarbhoomika/File-Storage-Service.git
 
-2️ Create database in MySQL
+- Create database in MySQL
 CREATE DATABASE filedb;
 
-3️ Configure application.properties
-spring.datasource.url=jdbc:mysql://localhost:3306/filedb
-spring.datasource.username=root
-spring.datasource.password=YOUR_PASSWORD
-file.upload-dir=D:/PROJECT/eclipse-workspace_P2/file_to_upload
-spring.jpa.hibernate.ddl-auto=update
+- Configure application.properties
 
-4️ Run the project
-
-From Eclipse → Run as → Spring Boot App
+- Run the project
+  From Eclipse → Run as → Spring Boot App
 
 ## API Endpoints & CURL commands
 
