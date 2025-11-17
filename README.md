@@ -58,7 +58,7 @@ Response
     "owner": "bhoomi",
     "createdAt": "2025-11-17T22:17:36.2262321"
 }
-<p align="side">
+<p align="left">
   <img src="Response_SS/UploadFile_SS.png" width="500"/>
 </p>
 
