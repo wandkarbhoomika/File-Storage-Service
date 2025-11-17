@@ -33,3 +33,31 @@ Used when submitting files from Postman or a form)
 - Postman (API testing)  
 
 ---
+
+API Endpoints (+ cURL commands)
+### 1️ Upload File
+
+POST /files/upload
+Postman (form-data)
+Key: file → Select File
+Key: owner → enter owner name
+
+CURL
+curl --location --request POST 'http://localhost:8000/files/upload' \
+--form 'file=@"C:/Users/Bhoomika/Downloads/deloitte.pdf"' \
+--form 'owner=bhoomi'
+
+Response 
+{
+    "id": 14,
+    "filename": "12",
+    "filepath": "D:/PROJECT/eclipse-workspace_P2/file_to_upload/12",
+    "size": 323909,
+    "contentType": "application/octet-stream",
+    "owner": "bhoomi",
+    "createdAt": "2025-11-17T22:17:36.2262321"
+}
+<img width="1367" height="398" alt="image" src="https://github.com/user-attachments/assets/100e98fc-e66d-42ff-b830-a9e7b5738960" />
+
+
+
