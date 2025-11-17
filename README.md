@@ -62,3 +62,71 @@ Response
   <img src="Response_SS/UploadFile_SS.png" width="500"/>
 </p>
 
+### 2 List File
+
+GET /files/list
+CURL
+postman request 'http://localhost:8000/files/list' \
+  --body ''
+
+Response 
+[
+    {
+        "id": 6,
+        "filename": "b_w_ey.pdf.pdf.pdf",
+        "filepath": "D:/PROJECT/eclipse-workspace_P2/file_to_upload/b_w_ey.pdf.pdf.pdf",
+        "size": 96165,
+        "contentType": "application/pdf",
+        "owner": "bhuvan",
+        "createdAt": "2025-11-17T12:40:03"
+    },
+    {
+        "id": 9,
+        "filename": "deloitte.pdf.pdf.pdf",
+        "filepath": "D:/PROJECT/eclipse-workspace_P2/file_to_upload/deloitte.pdf.pdf.pdf",
+        "size": 90001,
+        "contentType": "application/pdf",
+        "owner": "bhuvan",
+        "createdAt": "2025-11-17T15:44:34"
+    }
+]
+<p align="left">
+  <img src="Response_SS/ListFile_SS.png" width="500"/>
+</p>
+
+### 3 Download File
+
+GET /files/download/{id}
+
+This returns:
+File name
+Dynamic download URL
+
+CURL 
+postman request 'http://localhost:8000/files/download/9' \
+  --body ''
+
+Reponse 
+{
+    "fileName": "deloitte.pdf.pdf.pdf",
+    "downloadUrl": "http://localhost:8000/files/download-file/9" #Clicking on this link leads another tab in the postman , after clicking on send , in postman response file will be previewd or showed
+}
+<p align="left">
+  <img src="Response_SS/DownloadFile_SS.png" width="500"/>
+</p>
+
+
+### 4 Delete File
+
+Delete /files/delete/{id}
+
+CURL
+postman request DELETE 'http://localhost:8000/files/delete/6' \
+  --body ''
+<p align="left">
+  <img src="Response_SS/DeleteFile_SS.png" width="500"/>
+</p>
+
+
+
+
