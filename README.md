@@ -22,22 +22,6 @@ Used when submitting files from Postman or a form)
 - Easily switchable to AWS S3 without changing controller logic
 
 ---
-## 📁 Folder Structure
- File-Storage-Service
- ├──  src
- │    └──  main
- │         ├──  java/com/project/file/storage
- │         │      ├──  controller
- │         │      ├──  service
- │         │      ├──  repository
- │         │      ├──  entity
- │         │      └── 📄 FileStorageServiceApplication.java
- │         └──  resources
- │              └── 📄 application.properties
- ├── 📄 pom.xml
- └── 📄 README.md
-
----
 
 ## 🛠 Tech Stack
 
