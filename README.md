@@ -32,14 +32,15 @@ Used when submitting files from Postman or a form)
 - Lombok
 - Postman (API testing)  
 
-##🧰 Development Tools
+🧰 Development Tools
 - Eclipse IDE 
 - Postman
 - MySQL Workbench
   
 ---
 
-📦 Setup Instructions
+##📦 Setup Instructions
+
 1️ Clone the project
 git clone https://github.com/wandkarbhoomika/File-Storage-Service.git
 
