@@ -114,7 +114,7 @@ Response
 ]
 ```
 <p align="left">
-  <img src="Response_SS/ListFile_SS.png" width="500"/>
+  <img src="Response_SS/ListFiles_SS.png" width="500"/>
 </p>
 
 ### 3 Download File
